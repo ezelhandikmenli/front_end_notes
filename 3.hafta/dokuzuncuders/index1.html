@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sözde Elementler</title>
+    <style>
+        p::first-line{
+            font-weight:bold;
+        }
+        p::first-letter{
+            font-size: 50px;
+            color: blue;
+        }
+        h1::before{
+            content: "+";
+            padding: 20px;
+        }
+        h1::after{
+            content:"*";
+        }
+        li::marker{
+            content:"\00B6";
+            font-size: 30px;
+        }
+        ::selection{
+background-color: violet;
+        }
+        input[type="text"]::placeholder{
+            color:red;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Adınızı Giriniz">
+    <h1>Bu Bir Başlık</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint culpa nobis consectetur odio repudiandae facilis, ad eum maxime maiores corporis?</p>
+    <ul>
+        <li>liste1</li>
+        <li>liste2</li>
+        <li>liste3</li>
+        <li>liste4</li>
+        <li>liste5</li>
+        <li>liste6</li>
+    </ul>
+</body>
+</html>

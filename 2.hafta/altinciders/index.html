@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+<style>
+    /* yorum satırı css için */
+    /* internal css 
+   p{
+    color: blue;
+   }*/
+#paragraf{color: turquoise;
+/* id ler # ile gösterilir bir tane olmak zorunda tc gibi */
+}
+.p1{
+    color: aqua;
+
+    /* classlar bir tane olmak zorunda değil birden fazla yerde kullanılabilir */
+
+}
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* bütün etiketler için geçerlidir */
+}
+/* açılır seçici örneği */
+a[target='_blank']{
+    color:olivedrab;
+}
+/* çocuk seçiciler ile ilgili örnek */
+ul > li{
+    color: red;
+
+}
+ul>li>a{
+    color:purple;
+}
+ul>a{
+    color:burlywood;
+}
+</style>
+
+</head>
+<body>
+    <ul>
+    <li><a href="">LİSTE1</a></li>
+    <li>LİSTE2</li>
+    <li>LİSTE3</li>
+    <li>LİSTE4</li>
+    <a href="">LİSTE5</a>
+</ul>
+    <h1 style="color:red;">Bu Bir Başlıktır </h1>
+    <!-- inline css  -->
+    <p style="color:pink;">Bu ir paragraftır</p>
+    <!-- DİKKAT Diyelim ki bir p etiketi için hem inline hem external hem internal css var bunların hangisi geçerli şöyle ki en yakın olan geçerlidir
+    eğer style dosyasını linkini internal olan stle taglerinin altına koyarsan bu da yakınlık anlamına gelir dikkat edilmeli -->
+     <p id="paragraf">Bu bir paragraftır</p>
+     <p class="p1">Bu bir paragraftır</p>
+     <a href="" target="_blank">Link1</a>
+     <a href="">Link2</a>
+     <a href="">Link3</a>
+     <a href="" target="_blank">Link4</a>
+</body>
+</html>

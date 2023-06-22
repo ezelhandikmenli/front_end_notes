@@ -1,0 +1,5 @@
+/* external css */
+p{
+    color:orange !important;
+    /* ezicilik görevi yapıp öne geçer ve üstlenir artık p etiketi turuncu olur uzaklıklar önemsiz olur */
+}

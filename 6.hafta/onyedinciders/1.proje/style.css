@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    color: rgb(82, 82, 82);
+    font-size:20px;
+}
+/* NAVBAR */
+nav{
+    overflow:hidden;
+    background-color: brown;
+}
+nav .logo{
+    float:left;
+    width:30%;
+   
+}
+nav .logo img{
+    width:120px;
+    padding: 15px 14px;
+}
+nav .link{
+    display:flex;
+    justify-content:end;
+    width:70%;
+    margin-top:15px;
+}
+nav .link a{
+    display:inline;
+    color:gray;
+    text-decoration:none;
+    font-size:17px;
+    padding: 30px 15px;
+}
+nav .link a:hover{
+    color: rgb(253, 123, 8)
+}
+/* end navbar */
+/* Genel Ayarlar */
+.container{
+    width:75%;
+    margin:auto;
+}
+.row{
+    width:100%;
+    margin-top:140px;
+}
+.col-25{
+width:25%;
+}
+.col-50{
+    width:50%;
+   
+}
+.col-75{
+width:75%;
+}
+.col-100{
+width:100%;
+}
+.col-25,
+.col-50,
+.col-75,
+.col-100{
+    float:left;
+    margin: auto;
+}
+img{
+    width:100%;
+}
+div{
+    overflow:auto;
+}
+/* end genel ayarlar */
+/* banner */
+.banner, .buttons{
+    margin-top:10px;
+}
+.banner h2{
+    margin-top:100px;
+}
+.banner h1{
+    font-size:80px;
+    font-weight:bold;
+
+}
+.icons{
+    margin-top:20px;
+    height:auto;
+}
+.icon{
+    color:white;
+    background-color:rgb(253, 123, 8);
+    padding: 10px 20px;
+
+
+}
+/* Genel Buton Ayarları */
+button{
+    color:rgb(255, 255, 255);
+    background-color: rgb(253, 123, 8);
+    padding:10px 20px;
+    border:none;
+    border-radius:20px;
+    font-size:17px;
+}
+button:hover{
+    background-color:rgb(195,91,0);
+}
+.btn{
+    background-color: rgb(30, 30, 30)
+}
+.btn:hover{
+    background-color: black;
+}
+/* end genel buton ayaraları */
+/*  */

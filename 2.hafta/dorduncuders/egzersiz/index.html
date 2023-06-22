@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egzersiz</title>
+</head>
+<body>
+    <h1>Öğrenci Kayıt Formu</h1>
+    <form >
+        <label for="ad">Adınız:</label>
+        <input type="text" id="ad" name="ad"><br><br>
+
+        <label for="soyad">Soyadınız:</label>
+        <input type="text" id="soyad" name="soyad"><br><br>
+        <label>Cinsiyet:</label>
+         <input type="radio" id="cinsiyet" name="cinsiyet">Kadın
+         <input type="radio" id="cinsiyet" name="cinsiyet">Erkek <br><br>
+
+         <label for="dogum">Doğum Tarihi:</label>
+         <input type="date" id="dogum" name="dogum"><br><br>
+         <label for="posta">E-posta adresiniz:</label>
+         <input type="email" id="posta" name="posta"><br><br>
+
+         <label for="telephone">Telefon Numaranız:</label>
+         <input type="tel" name="telephone" id="telephone"><br><br>
+
+         <label for="bölüm">Bölüm</label>
+         <select name="bölüm" id="bölüm" >
+            <option value="">-- seçiniz--</option>
+            <option value="">Bilgisayar Mühendisliği</option>
+        </select><br><br>
+        <label>İlgi Alanları</label>
+        <input type="checkbox" name="spor">Spor
+        <input type="checkbox" name="Müzik">Müzik
+        <input type="checkbox" name="Sinema">Sinema <br><br>
+
+         <input type="submit" value="gönder">
+    </form>
+</body>
+</html>

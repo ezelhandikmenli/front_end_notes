@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    /* linklerin  altındaki çizgi yok olur */
+    cursor: pointer;
+}
+section{
+    display: webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+}
+@media (max-width: 1000px){
+    section{
+        padding: 125px 30px;
+    }
+}
+@media(max-width: 600px){
+ section{
+    padding:125px 30px;
+ }
+}
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:10;
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#262626;
+    padding: 35px 100px 0;
+}
+header a{
+    text-transform: uppercase;
+    font-weight:900;
+}
+header h2{
+    text-transform: uppercase;
+}
+header .nav{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+}
+header .nav li{
+    margin: 0 15px;
+}
+ header .nav li:first-child{
+    margin-left: 0;
+ }
+
+ header .nav li:last-child{
+    margin-right:0;
+ }
+@media(max-width: 1000px){
+    header{
+        padding: 20px 50px;
+    }
+}
+@media(max-width: 700px){
+    header{
+        flex-direction:column;
+
+    }
+    header h2{
+        margin-bottom:15px;
+    }
+    header .nav li{
+        margin: 0 7px;
+    }
+}
+.box{
+    justify-content: center;
+    min-height: 100vh;
+    color: #262626;
+    text-align:center;
+    position:relative;
+}
+.box .boxImg{
+    background-image: url(background.jpg);
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-size: cover;
+    z-index: -1;
+}
+.box h1{
+    margin-bottom:15px;
+    font-size:65px;
+    text-transform: uppercase;
+}
+.box h3{
+    margin-bottom: 48px;
+    font-size: 25 px;
+}
+.box a.boxBtn{
+    padding: 15px 35px;
+    background: #262626;
+    border-radius: 0 25px;
+    color:#fff;
+    text-transform: uppercase;
+}
+@media( max-width: 800px){
+    .box{
+        min-height: 600px;
+    }
+    .box h1{
+        font-size:32px;
+    }
+    .box h3{
+        font-size:20px;
+    }
+    .box a.boxBtn{
+        padding: 15px 40px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

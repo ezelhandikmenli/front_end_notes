@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex;
+            flex-wrap:wrap;
+            /* flex-wrap:wrap-reverse */
+            /* flex-direction: row; soldan sağa doğru sıralama */
+            /* flex-direction: row-reverse  sağdan sola doğru sırlama */
+            /* flex-direction: column; yukarıdan aşağıya sıralar */
+            /* flex-direction: column-reverse; aşağıdan yukarı sıralama */
+            /* flex-flow: wrap column-reverse kodun kısaltılmış hali */
+            /* justify-content: flex-start  sola dayalı öğeleri hizalar*/
+            /* justify-content: flex-end sağa dayalı öğeleri hizalar*/
+            /* justify-content: center öğeleri ortalar*/
+            /* justify-content: space-between; ilk öğe sola dayalı ikinci öğe sağa dayalı diğer öğeleri ortalar */
+            /* justify-content:space-around; ilk ve son öğe hariç diğerleri arası eşit boşluk */
+            /* justify-content:space-evenly; tüm öğeler arası boşluklar eşit */
+            background-color: darkgoldenrod;
+            height:500px;
+            /* align-items:stretch; varsayılan öğeleri container ın yüksekliğine göre gerer */
+            /* align-items: stretch; flex-start/flex-end/center/baseline */
+            /* align-content: center;  flex-start / flex-center/ flex-end/ center/space-between/ space-around/*/
+            /* align-items: center; */
+
+        }
+        .item{
+            width:200px;
+            background-color: aqua;
+            margin: 10px;
+           border-radius: 5px;;
+           padding:10px;
+           height:100px;
+
+        }
+        /* .item1{
+            order:2;
+        }
+        .item2{
+            order:1;
+        } */
+        /* .item{
+            flex-grow:1;
+        }
+        .item2{
+            flex-grow:2;
+        }
+        .item3{
+            flex-grow:4;
+        } */
+        /* .item4{
+            flex-shrink:2;
+
+        }
+        .item5{
+            flex-shrink:3;
+        } */
+        .item{
+            flex-basis: 1;
+        }
+        .item4{
+            flex-basis:2;
+        }
+        .item5{
+            flex-basis:40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="background-color: blue;" class="item item1">1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id quibusdam, veritatis magni adipisci distinctio accusantium?</div>
+        <div style="background-color: rgb(255, 0, 106);" class="item item2">2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id quibusdam, veritatis magni adipisci distinctio accusantium?</div>
+        <div style="background-color: rgb(48, 63, 62);" class="item item3">3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id quibusdam, veritatis magni adipisci distinctio accusantium?</div>
+        <div style="background-color: rgb(4, 255, 0);" class="item item4">4 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id quibusdam, veritatis magni adipisci distinctio accusantium?</div>
+        <div style="background-color: rgb(255, 140, 0);" class="item item5">5 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id quibusdam, veritatis magni adipisci distinctio accusantium?</div>
+        <div style="background-color: rgb(255, 0, 0);" class="item item6">6 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id quibusdam, veritatis magni adipisci distinctio accusantium?</div>
+
+    </div>
+</body>
+</html>

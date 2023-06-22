@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="ad">Adınızı giriniz</label>
+    <!-- label daki for la inpfuttaki id aynı olmak zorundadır -->
+    <form> <input type="text" id="ad" name="ad">
+        <br><br>
+       <input type="text" placeholder="soyadınızı giriniz" required><br><br> 
+       <!-- required o alanın doldurulmasının zorunlu olduğunu gösterir -->
+        <input type="password" name="parola" id="parola"><br><br>
+        <input type="number" name="yas" id="yas"><br><br>
+
+        <input type="email" name="email" id="email"><br><br>
+
+        <input type="date" name="tarih" id="tarih"><br><br>
+
+        <input type="tel" name="telephone" id="telephone"><br><br>
+
+        <input type="search" name="ara" id="ara"><br><br>
+
+        <input type="time" name="saat" id="saat"><br><br>
+        
+        <input type="file" name="foto"><br><br>
+
+        <input type="range" name="puan" min="0" max="10"><br><br>
+
+        <input type="submit" value="gönder"><br><br>
+        
+
+        <input type="color" name="renk" id="renk" ><br><br>
+
+        <input type="radio" name="cinsiyet" value="kadin">Kadın
+        <input type="radio" name="cinsiyet" value="erkek">Erkek <br><br>
+        <input type="checkbox" name="futbol">futbol
+        <input type="checkbox" name="voleybol">voleybol
+        <input type="checkbox" name="basketbol">baketbol <br><br>
+
+        <select name="sehir" id="sehir" size="3">
+            <option value="">--Şehir seçiniz--</option>
+            <option value="istanbul">istanbul</option>
+            <option value="sinop">sinop</option>
+        </select><br><br>
+        <textarea name="mesaj" id="mesaj" cols="30" rows="10" placeholder="mesajınızı giriniz"></textarea><br><br>
+
+        <input type="reset" value="sıfırla"><br><br>
+         <button>Gönder</button><br><br>
+         <fieldset>
+            <legend>Kullanıcı formu</legend>
+            <label for="">Adınız</label>
+            <input type="text" name="" id="">
+            <br><br>
+            <label for="">Soyadınız</label>
+            <input type="text">
+         </fieldset>
+
+    </form>
+</body>
+</html>

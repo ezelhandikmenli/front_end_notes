@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow:auto;
+        }
+        body{
+            color:rgb(82,82,82);
+            font-size:20px;
+        }
+        nav{
+            overflow:hidden;
+        }
+        /* navbar */
+        nav .logo img{
+            width: 100%;
+            padding: 15px 14px 15px;
+        }
+        nav .logo, nav .link{
+            float:left;
+            width:50%;
+        }
+        
+        nav .link{
+        display: flex;
+        justify-content: end;
+        }
+        nav .link a{
+            color:grey;
+            padding:30px 14px 16px;
+            text-decoration:none;
+            font-size: 17px;
+            
+        }
+        nav .link a:hover{
+            color:orange;
+           
+        }
+        button{
+            margin: 25px 20px;
+            border-radius:15px;
+            background-color: orange;
+            color:white;
+            padding:10px 15px;
+            border: none;
+        }
+        @media screen and (max-width:1000px){
+            nav .logo, nav .link{
+                width:100%;
+                flex-direction: column;
+            }
+            nav .link a, nav .logo {
+                text-align:center;
+            }
+            nav .link a:hover{
+                background-color: gray;
+                border: 1px solid black;
+                border-radius: 20px;
+                width:90%;
+                margin:auto;
+            }
+        }
+    </style>
+</head>
+<body>
+     <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="logo">
+            </div>
+            <div class="link">
+                <a href="#">Anasayfa</a>
+                <a href="#">Hakkımda</a>
+                <a href="#">Servis</a>
+                <a href="#">İletişim</a>
+                <button>Beni arayın</button>
+            </div>
+        </div>
+     </nav>
+</body>
+</html>

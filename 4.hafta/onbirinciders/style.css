@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+nav{
+    background-color: black;
+    color:white;
+    padding: 20px;
+    text-align: center;
+}
+div{
+    overflow: hidden;
+}
+.container{
+    /* background-color: aqua; */
+    width: 75%;
+    margin: 50px auto;
+}
+.img{
+    width: 100%;
+}
+.row1{
+    /* background-color: blue; */
+    width: 100%;
+    margin:20px 0;  
+}
+.col-50{
+    /* background-color: blueviolet; */
+    width: 50%;
+}
+.col-25{
+    width:25%;
+   
+}
+.col-50, .col-25{
+    float: left;
+    padding: 0 20px;
+}
+    
+.container h1{
+    background-color: cornflowerblue;
+    color: aliceblue;
+   text-align: center;
+   margin-bottom: 5px;
+}
+.card img{
+    width: 100%;
+}
+.card{
+    border: 3px solid red;
+    padding:10px;
+    
+}
+
