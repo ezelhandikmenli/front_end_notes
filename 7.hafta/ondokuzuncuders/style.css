@@ -9,6 +9,11 @@ nav{
     height: 60px;
    
 }
+nav img{
+  width:20px;
+  height:25px;
+  margin-right:7px;
+}
 label{
   color: rgb(95, 91, 91);
   margin-top: 10px;
@@ -19,8 +24,8 @@ label:hover{
 }
 input{
     width: 400px;
-    height:30px;
-    margin:15px;
+    height:40px;
+    margin:16px;
 }
 .container{
     width:75%;
@@ -30,18 +35,26 @@ input{
 h1{
     margin-top: 20px;
     margin-bottom:10px;
-    color: grey;
+    margin-left: 15px;
+    color: rgb(7, 7, 7);
+    font-size: 25px;
+}
+.bilgi{
+  color: rgb(204, 196, 196);
+  margin-top:0;
 }
 p{
-    margin:20px;
+    margin:10px 20px;
 }
-.col-60{
+.col-70{
     width:70%;
     float:left; 
+    margin-bottom: 800px;
    
 }
-.col-40{
+.col-30{
     width:30%;
+    height: 1260px;
     float:left;
     background-color: rgba(231, 225, 225, 0.959);
     border: solid 1px rgb(203, 200, 200);
@@ -52,13 +65,14 @@ p{
     margin:5px;
     
 }
-/* .baslik, .foto, .dogum, .olum, .defin, .milliyet, .ebeveynler, .cocuklar{
-    border-bottom: 1px solid rgb(203, 200, 200);
-    margin:5px;
-} */
+
 .foto img{
     width:100%;
-    padding: 50px;
+    padding: 15px;
+}
+.foto p{
+  text-align: center;
+  margin-top: 0;
 }
 .baslik, .foto, .dogum, .olum, .defin, .milliyet, .evlilik, .cocuk, .ebeveynler{
     border-bottom: 1px solid rgb(203, 200, 200);
@@ -85,7 +99,7 @@ p{
     margin-top: 0;
   }
   .accordion-item {
-    border: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
     margin-bottom: 10px;
   }
   
@@ -103,6 +117,8 @@ p{
   .accordion-content p {
     margin: 0;
   }
-  /* .acordion-content h2{
-    margin:8px;
-  } */
+ 
+  footer{
+    background-color: rgb(191, 189, 189);
+  }
+  
