@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"> Bu yazı gizlenecek ve gösterilecek</p>
+    <button id="gizle">Gizle</button>
+    <button id="goster">Goster</button>
+    <script>
+        document.getElementById("gizle").onclick = function(){
+            document.getElementById("p1").style.display = "none";
+        }
+        document.getElementById("goster").onclick = function(){
+            document.getElementById("p1").style.display = "block";
+        }
+    </script>
+</body>
+</html>

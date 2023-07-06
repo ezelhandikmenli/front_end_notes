@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="isim">
+    <button id="btn">Goster</button>
+    <p id="goster" style="text-transform:uppercase;"></p>
+    <script>
+        document.getElementById("btn").onclick = function(){
+           document.getElementById("goster").innerHTML = document.getElementById("isim").value + " ";
+        }
+        
+function throwCoin() {
+  return (Math.floor(Math.random() * 2) === 0) ? 'Yazı' : 'Tura';
+}
+    </script>
+</body>
+</html>

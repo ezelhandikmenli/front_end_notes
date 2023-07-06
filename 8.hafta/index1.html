@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">Merhaba javascript. Ben</p>
+    <button id="btn">ekle</button>
+    <!-- <p id="p2">Bu ikinci paragraftır</p> -->
+    
+    <script>
+      document.getElementById("btn").onclick = function(){
+        // document.getElementById("p1").innerHTML = "Bu ikinci paragraftır"
+        // document.getElementById("p2").innerHTML = "Bu ilk paragraftır"
+         document.getElementById("p1").innerHTML += "Öznur "
+    }
+    </script>
+</body>
+</html>
