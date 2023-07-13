@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        // forEach(): değerlerimi alt alta yazdırıcam
+        let sayilar = [30, 20, 80, 43, 39];
+        let yazi = "";
+        function yazdir(value, index, array){
+            yazi = yazi + value + "<br>";
+        }
+        sayi.forEach(yazdir);
+        document.getElementById("div1"),innerHTML = yazi ;
+
+        // -------------- .map() metodu ----------
+        let sayi = [30, 20, 80, 43, 39];
+        function ikicarpimi(value, index, array){
+            return value*2
+        }
+        let sayi2 = sayi.map(ikicarpimi);
+        document.getElementById("div1").innerHTML = sayi2;
+        document.write(sayi);
+    </script>
+</body>
+</html>

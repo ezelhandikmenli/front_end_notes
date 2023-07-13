@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div id="div1">
+    
+    </div>
+    <div id="div2"></div>
+    <div id="div4"></div>
+
+    <script>
+        // ----------STRİNG----------
+        let a = ["Zeynep", "Ali", "Pınar", "Mahmut", "Burak"]
+        document.getElementById("div1").innerHTML = a;
+        a.sort();
+        documnet.getElementById("div2").innerHTML =a;  
+    //-------İnteger--------
+    let b = [120,45,75,12,5,20];
+    b.sort();
+    document.getElementById("div3").innerHTML  = b;
+    b.sort(function(x,y))
+    b.sort(function(x,y){return x-y}); // Küçükten büyüğe sıralanış
+    document.getElementById("div3"),innerHTML =C;
+
+    let c = b[b.length-1];
+
+    document.getElementById("div3").innerHTML =b;
+    document.write(c);
+
+    let d = [{marka: "Fiat", yil: 2015},
+{marka:"mercedes", yil:2021},
+{marka:"ford", yil: 2020}];
+function goster(){
+    document.getElementById("div4").innerHTML =
+    d[0].marka+ " " + d[0].yil + "<br>"+
+    d[1].marka + " " +d[1].yil + "<br>"+
+    d[2].marka + " "+ d[2].yil + "<br>";
+}
+
+function sirala(){
+    d.sort(function(a,b){return a.yil-b.yil});
+    goster();
+}
+ 
+    
+ </script>
+</body>
+</html>

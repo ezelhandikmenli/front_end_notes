@@ -7,15 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    
-
-
-
-
+    <div id="div1"></div>
 
     <script>
-        let personel = {isim: "Ahmet", soyisim:"Oğuz", maas: "14000", departman:"İK"}
-        document.write(personel["maas"]);
+        let sayilar = [10, 20, 30]
+        
+        function on_kati(value, index, array){
+            return value*10
+        }
+        let sonuc= sayilar.map(on_kati);
+        document.getElementById("div1").innerHTML = sonuc;
+        document.write(sayi);
     </script>
 </body>
 </html>

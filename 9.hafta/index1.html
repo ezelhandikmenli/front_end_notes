@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let meyveler = ["Erik", "Kiraz", "Karouz", "Vişne"]
+        let meyve = meyveler[0];
+        document.write(meyve);
+        let sonuc =  meyveler.length;
+        let sonuc1 = meyveler[meyveler.length-1]; //index 0 dan başladığı için yapılır
+        let sonuc2 = meyveler.push("Şeftali");
+        document.write(meyveler);
+        let sonuc3 = meyveler.pop(); // son elemeanı siler
+        document.write(sonuc);
+        let sonuc4 = meyveler.shift();//ilk elemanı siler
+        let sonuc5 = meyveler.unshift("Elma");
+        let sonuc6 = meyveler.slice(1,3);//belirli aralığı gösterme
+        meyveler.splice(2,1,"ayva","portakal");
+        meyveler.splice(0,1)//sadece silme işlemlerinde kullanılır
+        let isimler = ["ali","ayşe","fatma"];
+        let sonuc7 = meyveler.contact(isimler);//iki diziyi birleştirir
+        document.write(meyveler);
+
+ </script>
+</body>
+</html>
