@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        //  ------------------------- Sayılar -----------------------
+        // let x = -10; negatif tam sayı
+        // let y = 3.5; float (ondalıklı sayı)
+        
+        // let distance = 452e5; e5 üslü sayı olarak 10 üzeri 5 
+        // let x = 452e-5;
+        // let maxNumber = Infinity;
+
+        // Nan sayı
+        // let a = 5;
+        // let b = "oznur";
+        // document.write(a*b);
+
+        // let x = 10;
+        // let y = 0;
+        // document.write(x/y);
+
+        // ----------- toString --------------
+        // let x = 25;
+        // document.write(typeof x);
+
+        // x = x.toString();
+        // document.write(typeof x);
+
+        //----- toExponential
+        let y = 562354235.3652
+        y = y.toExponential(4);
+        // document.write(y); 
+        
+        // ------ tiFixed --------
+        let z = 562354235.3652;
+        z = z.toFixed(2);
+        document.write(z);
+
+        // ------------ toPrecision -----------
+        let a =  562354235.3652;
+        a = a.toPrecision(2);
+        document.write(a);
+
+       //-----------NUMBER-------------
+    
+       let b = "5.15";
+       document.write(typeof b);
+
+       b = Number(b);
+       document.write(typeof b);
+
+       b = Number(b);
+       c = Number(10.5);
+
+       //------------------- parseInt---------------
+       let d = 5.90;
+       d = parseInt(d);
+       // document.write(d);
+
+       
+    //----------- parseFloat----------------
+
+    let e = "5.90";
+    e = parseFloat(e);
+    document.write(e);
+    
+    //-------- max_value    min_value-----------
+     let f;
+     f = Number.MIN_VALUE;
+     
+     document.write(f);
+
+
+     
+
+    </script>
+</body>
+</html>
