@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="s1"></div>
+
+
+
+    <script>
+        let a = prompt("ilk arkadaşın yaşını giriniz:");
+        let b = prompt("İkinci arkadaşın yaşını giriniz");
+        let c =Number(a) - Number(b);
+        if(c<0){
+            document.write("ikinci arkadaşın yaşı büyüktür ");
+        }
+        else if(c>0){
+            document.write("İlk arkadaşın yaşı büyüktür ");
+        }
+        else{
+            document.write("Arkadaşlar aynı yaştadır ");
+        }
+        let x = Math.abs(c);
+        document.write("<br>");
+        document.write("Her ikisi arasındaki yaş farkı " + x);
+
+    </script>
+</body>
+</html>

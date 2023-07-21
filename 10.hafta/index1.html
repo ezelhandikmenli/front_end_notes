@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<label for="isim">İsim ve Soyisminizi giriniz</label>
+
+<input type="text" id="isim">
+<br>
+<label for="mail">E-mail adresinizi giriniz</label>
+
+<input type="email" id="mail">
+<br>
+<label for="parola">Parolanızı giriniz</label>
+<input type="password" id="parola">
+<br>
+<label for="parola1">Parolanızı  tekrarlayınız</label>
+<input type="password" id="parola1">
+<br>
+<button id="btn">Kayıt ol</button>
+
+<script>
+document.getElementById("btn").onclick = function(){
+    // if(isim.length < 10){
+    //     alert("İsim soyisim 10 karakterden az");
+    // }
+    // if((!mail.includes("@")) == true){
+    //  alert("mail @ işareti içeriyor");
+    // }
+    // if(password.length < 8){
+    //     alert("parola 8 karakterden kısa");
+    // }
+    // if((parola === parola1) = false){
+    //     alert("parola eşit değil";)
+    // }
+    if((isim.length < 10) && ((!mail.includes("@")) == true) && (password.length < 8) && ((parola === parola1) = false)){
+        alert("tekrar kontrol ediniz");
+    }
+    else{
+        alert("kayıt başarılı");
+    }
+}
+
+</script>
+
+
+
+</body>
+</html>

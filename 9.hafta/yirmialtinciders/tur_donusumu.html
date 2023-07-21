@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <!-- <script>
+        let a = String(10);
+        let b = String(false);
+        let c = String(Date());
+        let d = toString(10);
+
+        document.write(typeof d);
+
+        let h = ["armut","patates"];
+        let j = "javascript";
+        let k = 20;
+        document.write(k.constructor);
+    </script> -->
+    <script>
+        let l = ["erik", "şeftali", "karpuz"];
+
+        function kontrol(x){
+            return x.constructor.toString().indexOf("Array") > -1;
+        }
+        document.write(l.indexOf("karpuz"));
+        let m = kontrol(l);
+        document.write(m);
+
+    </script>
+</body>
+</html>
