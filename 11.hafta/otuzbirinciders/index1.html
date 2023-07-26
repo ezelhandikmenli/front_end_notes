@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <div id="p1"><p>Birinci paragraf</p></div>
+        <div id="p2"><p>İkinci paragraf</p></div>
+        <div id="p3"><p>Üçüncü paragraf</p></div>
+        <div id="p4"><p>Dördüncü paragraf</p></div>
+     
+    </div> 
+    
+        <script>
+            // document.getElementByTagName("p")[0].innerHTML = "Paragraf güncellendi";
+let x = document.getElementByTagName("p");
+for(i=0; i<x.length; i+=2){
+    x[i].style.color = "red";
+}
+        </script>
+</body>
+</html>

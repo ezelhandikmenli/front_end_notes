@@ -7,17 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-   <div id="div1">
-    <div id="p1"><p>Birinci paragraf</p></div>
-    <div id="p2"><p>İkinci paragraf</p></div>
-    <div id="p3"><p>Üçüncü paragraf</p></div>
-    <div id="p4"><p>Dördüncü paragraf</p></div>
- 
-</div> 
+    
+
+
+
+
+
+
 
     <script>
-        alert(document.body.innerHtml);
+        // window.alert("Hoşgeldiniz, \n Ezelhan Hanım")
+    //window.prompt("Adınızı giriniz");
+    let x = window.confirm("çerezleri kabul ediyor musunuz");
+    if(x){
+        document.write("onaylandı");
+    }
+    else{
+        document.write("Reddedildi");
+    }
     </script>
-   
 </body>
 </html>
