@@ -11,14 +11,14 @@
 
     <script>
         let tutulanSayi = 30;
-        let n = prompt("istediğiniz bir sayıyı giriniz");
-        if(tutulanSayi = n){
+        let n = Number(prompt("istediğiniz bir sayıyı giriniz"));
+        if(tutulanSayi == n){
             document.write("Tebrikler sayıyı bildiniz");
         }
         else{ 
             while(true){
               let n = prompt("sayıyı bulana kadar devam edin");
-              if(tutulanSayi = n){
+              if(tutulanSayi == n){
                 document.write("Tebrikler sayıyı bildiniz");
                 break;
               }
