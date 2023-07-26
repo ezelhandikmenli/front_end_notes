@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+// egzersiz 28
+function _gorunum(num) {
+  return num < 10 ? '0' + num : num;
+}
+
+function _SuAnZamanNedir() {
+  let now = new Date();
+  let yil = now.getFullYear();
+  let ay = _gorunum(now.getMonth() + 1 );
+  let gun = _gorunum(now.getDate());
+  let saat = _gorunum(now.getHours());
+  let dakika = _gorunum(now.getMinutes());
+  let saniye = _gorunum(now.getSeconds());
+
+  document.write(`Şu anki tarih ve saat: ${gun}-${ay}-${yil} ${saat}:${dakika}:${saniye}`);
+}
+
+_SuAnZamanNedir();
+
+    </script>
+</body>
+</html>

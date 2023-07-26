@@ -13,16 +13,18 @@
 
 
 
+<!-- egzersiz 26  -->
+
     <script>
-        //********************** egzersiz 24 ******************
-    let n = prompt("karesini istediğiniz sayıyı giriniz");
-   
-    function _kareAlma(y){
-        let x = y*y;
-       return document.write(x);
-    }
-    _kareAlma(n);
+ 
+ function Hesapla(n) {
+  let toplam = 0;
+  for (let sayi = 1; sayi <= n; sayi++) {
+    toplam += sayi;
+  }
+  return toplam;
+}
+document.write(Hesapla(6));
     </script>
-    
 </body>
 </html>
