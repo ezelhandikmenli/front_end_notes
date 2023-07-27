@@ -19,6 +19,16 @@
         function pencereAc(){
             window.open("index2.html", "blank", "width=400, height=200");
         }
+        let yeniPencere;
+        function pencereAc(){
+            yeniPencere = window.open("","_blank","width=300 , height=400");
+        }
+        function pencereTasi(){
+            yeniPencere.focus();
+        }
+        function pencereTasi2(){
+            yeniPencere.moveBy(200,300);
+        }
     </script>
 </body>
 </html>
