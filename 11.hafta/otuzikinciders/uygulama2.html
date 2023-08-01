@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+        body{
+            background-color: rgb(177, 24, 24);
+        }
+
+        h1{
+            text-align: center;
+            background-color: rgba(0, 0, 0,0.5);
+            color: white;
+            margin: 50px 0;
+        }
+        
+        form{
+            max-width: 500px;
+            background-color: rgba(0, 0, 0,0.5);
+            margin: auto;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        input, label{
+            display: block;
+            float: left;
+            margin-bottom: 20px;
+        }
+        input{
+            width: 30%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 6px;
+
+        }
+        label{
+            width: 40%;
+            text-align: end;
+            margin-top: 12px;
+        }
+        
+        input[type= "button"]{
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            background-color: springgreen;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+
+        }
+        input[type= "button"]:hover{
+            background-color: rgb(2, 113, 58);
+        }
+        #div1{
+            display: block;
+            text-align: center;
+            width: 100%;
+            height: 50px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    
+<h1>ÜNİVERSİTE HARF NOTU HESAPLAMA</h1>
+
+<form action="">
+    <label for="vize">Ara Sınav :</label>
+    <input type="text" name="vize" id="vize">
+
+    <label for="quiz1">1.Kısa Sınav :</label>
+    <input type="text" name="quiz1" id="quiz1">
+
+    <label for="quiz2">2.Kısa Sınav :</label>
+    <input type="text" name="quiz2" id="quiz2">
+
+    <label for="odev">Ödev :</label>
+    <input type="text" name="odev" id="odev">
+
+    <label for="final">Final :</label>
+    <input type="text" name="final" id="final">
+
+    <div id="div1"></div>
+    <input type="button" id="btn" onclick="yazdir()" value="HESAPLA">
+</form>
+
+    
+
+
+</body>
+</html>
