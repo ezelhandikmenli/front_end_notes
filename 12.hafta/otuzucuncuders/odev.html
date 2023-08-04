@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: antiquewhite;
+        }
+        h1{
+            background-color: rgba(0,0,0,0.5);
+            color:white;
+            margin: 50px 0;
+        }
+        form{
+            max-width: 500px;
+            background-color: rgba(0,0,0,0.5);
+            margin: auto;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 5px;
+            width: 50%;
+            margin-top: 80px;
+        }
+        input{
+           width: 30%;
+           padding: 12px;
+           border: 1px solid #ccc;
+           border-radius:5px;
+           margin-top: 6px;
+        }
+        input[type="button"]{
+            width:100%;
+            border-radius: 5px;
+            border:none;
+            background-color: springgreen;
+            color:white;
+            padding:10px;
+            cursor:pointer;
+        }
+        input[type= "button"]:hover{
+            background-color:rgb(2,113,58);
+        }
+        #div1{
+            display:block;
+            width:100%;
+            height:50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    
+<div id="div1">
+
+    <form action="">        
+        <h1>LOGIN</h1>
+        <input type="text" id="kullaniciAdi" placeholder="Kullanıcı Adı">
+        <input type="text" id="parola" placeholder="Sifrenizi Giriniz">
+        <input type="button" id="btn" onclick="onay()" value="Giriş yap">
+    </form>
+</div>
+
+
+<script>
+     let dogrulama = [
+        { kullaniciAdi: "Ezelhan", parola: "12345" },
+        { kullaniciAdi: "Miray", parola: "5678" },
+        { kullaniciAdi: "Nursima", parola: "a1234" },
+        { kullaniciAdi: "Fatma", parola: "5678" },
+        { kullaniciAdi: "Hakan", parola: "h3456" }
+    ];
+
+    function onay() {
+        const _kullaniciAdi = document.getElementById("kullaniciAdi").value;
+        const _parola = document.getElementById("parola").value;
+
+        let dogruMu; 
+
+        for (let i = 0; i < dogrulama.length; i++) {
+            if (dogrulama[i].kullaniciAdi === _kullaniciAdi) {
+                if (dogrulama[i].parola === _parola) {
+                    dogruMu = true;
+                    break;
+                } else {
+                    alert("Kullanıcı adı doğru ama parola yanlış, tekrar deneyebilirsiniz.");
+                    return; // Parola yanlış olduğunda fonksiyondan çık.
+                }
+            }
+        }
+
+        if (dogruMu) {
+            alert("Giriş Başarılı!");
+        } else {
+            alert("Kullanıcı adı yanlış, tekrar deneyebilirsiniz.");
+        }
+    }
+
+// function onay(){
+//         const _kullaniciAdi = document.getElementById("kullaniciAdi").value;
+//         const _parola = document.getElementById("parola").value;
+
+    
+//     let dogruMu ;
+//     for(let i = 0; i < dogrulama.length; i++){ 
+//         if(dogrulama[i].kullaniciAdi === _kullaniciAdi && dogrulama[i].parola === _parola){
+//         dogruMu = true;
+//         break;
+//         }
+//     }
+//     if(dogruMu){
+//         alert("Giriş Başarılı");
+//     }
+//     else{
+//         alert("Kullanıcı Adı veya Şifre hatalı");
+//     }
+// }
+
+
+</script>
+
+</body>
+</html>
