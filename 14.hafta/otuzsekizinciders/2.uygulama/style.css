@@ -1,0 +1,66 @@
+*{
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-image: url(img/img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+}
+form{
+    text-align: center;
+    width:30%;
+    border: 1px solid grey;
+    border-radius: 20px;
+    padding:20px;
+    margin: auto;
+    background-image: url(img/img7.jpg);
+    margin-top:80px auto;
+}
+h1{
+    font-family: Arial, Halvetica, sans-serif;
+    font-size: 50px;
+    color: aliceblue;
+}
+input{
+    width:50%;
+    margin:auto;
+    border:none;
+    border-radius:20px;
+    padding:20px;
+    margin-bottom:10px;
+    background-color:rgba(39,39,39,0.5);
+    color:yellow;
+}
+label{
+width:50%;
+display:block;
+margin: 10px auto;
+}
+input[type="button"]{
+    background-color: rgb(14,3,145);
+    color:white;
+    font-size:18px;
+
+}
+input[type= "button"]:hover{
+    background-color:rgb(28,2,53);
+}
+#p1, #p2{
+    text-decoration: underline;
+    cursor:pointer;
+}
+#p1:hover,
+#p2:hover{
+    text-decoration:none;
+}
+#giris{
+    display:none;
+}
+#girisHata{
+    margin-top:20px;
+    color:red;
+}
