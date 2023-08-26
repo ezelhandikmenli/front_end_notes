@@ -1,0 +1,12 @@
+/* genel buton ayarları */
+
+.button{
+    color:white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding:10px;
+    background: rgb(73,16,111);
+    background: rgb(73,16,111);
+    background: radial-gradient(circle, rgba(73, 16, 111, 0.684) 22%, rgba(11, 78, 88, 0.782) 100%);
+    text-decoration:none;
+}
