@@ -54,3 +54,53 @@ body,html{
     width:55%;
     border: solid 8px white;
 }
+.cizgi{
+    width:100%;
+    border:  solid 3px grey;
+    background-color: rgba(128, 128, 128, 0.488);
+}
+footer{
+    width:100%;
+    background-color: rgb(39, 38, 38);
+    overflow:hidden;
+    padding:20px;
+    text-align:center;
+}
+.footer-element{
+    width:33%;
+    float:left;
+}
+footer >.footer-element>h2{
+    color:blue;
+    padding:5px;
+}
+footer > .footer-element> .logo{
+    color:white;
+    width:25%;
+    margin:auto;
+
+}
+footer > .footer-elemenet, .logo img{
+    width:100%
+}
+footer > .footer-element >ul{
+    list-style-type: none;
+
+}
+footer > .footer-element >ul >li{
+    padding:5px;
+
+}
+footer > .footer-element >ul >li >a{
+   text-decoration: none;
+   color:white;
+   font-size:20px;
+
+}
+hr {
+    width:80%;
+    border-style: solid;
+    color: grey;
+    border-width: 2px;
+    margin:auto;
+}
