@@ -43,3 +43,38 @@ body,html{
 .banner img{
     width: 80%;
 }
+
+.arkaplan1{
+
+    background-image:url("images/arkaplan1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.arkaplan2{
+
+    background-image:url("images/arkaplan2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.figure{
+    border: 10px solid antiquewhite;
+    height: 340px;
+}
+.figure img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:320px;
+}
+@media screen and (max-width:1200px){
+   .banner{
+    height: 180%;
+    
+   }
+   .banner .row{
+    padding-top:150px;
+   }
+        
+    }
