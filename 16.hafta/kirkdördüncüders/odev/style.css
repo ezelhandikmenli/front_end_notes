@@ -45,7 +45,7 @@ body,html{
 }
 
 .giris2{
-    margin-top:70px;
+    margin-top:60px;
 }
 .button{
     color:white;
@@ -72,5 +72,16 @@ body,html{
     text-decoration:none;
 }
 .box{
-    
+    display:flex;
+    margin:10px 50px;
+  
+}
+.hatirla{
+    display:flex;
+    margin-top:-30px;
+    margin-left:70px;
+}
+.film{
+    margin-top:-10px;
+    margin-left:-130px;
 }
