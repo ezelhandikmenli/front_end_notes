@@ -1,0 +1,71 @@
+img{
+    width: 100%;
+}
+nav{
+    background: linear-gradient(90deg, rgba(0,0,0,0.984) 0%, rgb(29,29,41) 100%); 
+    height: 85px;
+}
+.navbar-brand img{
+    width:120px;
+}
+.navbar .nav-link{
+    color:white;
+}
+.navbar .nav-link:hover{
+    color: #037ccd;
+}
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/heroImage.jpg");
+
+  /* Set a specific height */
+  height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.satir1{
+    background-color: black;
+    width:1436px;
+}
+.gnrcard{
+    margin:20px 80px;
+    background-color: rgb(35, 34, 34);
+    color:white;
+}
+.gnrcard img{
+    width:200px;
+    margin:30px 10px 10px 40px;
+    border-radius: 5px;
+    
+}
+.back{
+    background-color:rgb(83, 83, 198);
+}
+.fark:hover{
+    background-color:rgb(83, 83, 198) ;
+}
+.satir2{
+    background-color: rgb(35, 34, 34);
+    color:white;
+    width:1436px;
+    margin-left:0;
+}
