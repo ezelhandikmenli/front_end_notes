@@ -1,0 +1,17 @@
+$renk: #555;
+$genislik: 150px;
+$yukseklik: 200;
+
+.box{
+    background-color: $renk;
+    width: $genislik;
+    height: $yukseklik + px;
+}
+.box2{ 
+    width: $genislik /3;
+    height: $yukseklik * 2 + px;
+}
+.box3{
+    $renk: red; //local
+    color: $red;
+}

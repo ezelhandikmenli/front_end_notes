@@ -1,0 +1,16 @@
+.box {
+  float: left;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+a {
+  text-decoration: none;
+  background-color: red;
+  color: #fff;
+  padding: 5px 15px;
+}
+a:hover {
+  background-color: yellow;
+}/*# sourceMappingURL=scsskurallar.css.map */

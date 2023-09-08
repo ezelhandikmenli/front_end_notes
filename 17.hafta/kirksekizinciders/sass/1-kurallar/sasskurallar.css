@@ -1,0 +1,31 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.paragraf {
+  float: left;
+  color: red;
+}
+
+.container {
+  float: left;
+  color: red;
+}
+.container .row {
+  background-color: black;
+}
+.container .row .col {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  background-color: red;
+  color: #fff;
+  padding: 5px 15px;
+}
+a:hover {
+  background-color: yellow;
+}/*# sourceMappingURL=sasskurallar.css.map */

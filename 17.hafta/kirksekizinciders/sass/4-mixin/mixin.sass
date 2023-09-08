@@ -1,0 +1,27 @@
+@mixin boyut
+    width:100px
+    height:150px
+
+.box
+    background-color: red
+    @include boyut
+
+//parametre kullanarak yapalım
+@mixin olcek($genislik, $yukseklik)
+    width: $genislik
+    height: $yukseklik
+
+@mixin renk($arka: null, $renk:null)
+background-color: $arka
+color: $renk
+
+@mixin ucnokta
+    overflow: hidden
+    
+
+.box
+    background-color: red
+    @include boyut(1000px 150px)
+    @include renk(null, red)
+    @include ucnokta
+    

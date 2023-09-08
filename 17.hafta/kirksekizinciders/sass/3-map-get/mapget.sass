@@ -1,0 +1,9 @@
+$renk: ("acik": #19f700, "orta": #1b940d, "koyu": #0629202 )
+$boyut: ("kucuk": 12px, "orta": 15px, "buyuk": 24px) 
+
+body
+    background-color: map-get($renk, "koyu")
+    color: map-get($renk, "acik")
+
+.paragraf
+    font-size: map-get($boyut, "kucuk")
