@@ -1,0 +1,20 @@
+.mesaj, .uyari, .basarili, .hatali {
+  float: left;
+  width: 300px;
+  padding: 15px;
+  margin: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.hatali {
+  background-color: red;
+}
+
+.basarili {
+  background-color: green;
+}
+
+.uyari {
+  background-color: orange;
+}/*# sourceMappingURL=extend.css.map */

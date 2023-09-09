@@ -1,0 +1,17 @@
+@function tema($tur : null)
+    @if ($tur == "acik")
+        @return #fff
+    @else if ($tur == "koyu")
+        @return #000
+    @else if ($tur == yesil)
+        @return green
+    @else 
+        @return yellow
+
+@function birimCevir($px)
+    @return $px/16 + rem
+body
+    background-color: tema(acik)
+
+.baslik
+    font-size: birimCevir(100)

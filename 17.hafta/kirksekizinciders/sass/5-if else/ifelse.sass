@@ -1,0 +1,31 @@
+@mixin icon($boyut, $yuvarlak: false)
+    width: $boyut
+    height: $boyut
+
+    @if ($yuvarlak)
+        border-radius: $boyut
+
+.div1
+    background-color: red
+    float: left
+    @include icon(200px, true)
+
+@mixin kenarlik ($yan, $tur, $renk)
+    @if($yan == "l")
+        border-left: 1px $tur $renk
+    @else if($yan =="r")
+        border-right: 1px $tur $renk
+    @else if($yan =="b")
+        border-bottom: 1px $tur $renk
+    @else if($yan =="t")
+        border-top: 1px $tur $renk
+    @else if($yan =="a")
+        border: 1px $tur $renk
+    @else 
+        @error "Hatalı kod girdiniz"
+
+.div2
+    width: 400px
+    height:200px
+    background-color: pink
+    @include kenarlik("l", solid, blue)

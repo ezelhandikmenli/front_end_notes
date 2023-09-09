@@ -1,0 +1,14 @@
+.div1 {
+  background-color: red;
+  float: left;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+}
+
+.div2 {
+  width: 400px;
+  height: 200px;
+  background-color: pink;
+  border-left: 1px solid blue;
+}/*# sourceMappingURL=ifelse.css.map */
