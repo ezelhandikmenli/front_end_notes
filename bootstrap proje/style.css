@@ -1,0 +1,16 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.logo{
+    width:250px;
+    height: 250px;
+    margin-right:800px;
+    margin-top:5px;
+}
+.konuml{
+    margin-top:-160px;
+}
