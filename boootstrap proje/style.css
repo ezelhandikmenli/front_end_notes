@@ -86,12 +86,12 @@ color:darkgray;
     width: 90%;
 }
 .satir1{
-    background-image: url("images/satir1.jpg");
+    /* background-image: url("images/satir1.jpg"); */
     background-size:cover;
     background-repeat: no-repeat;
 }
 .satir2{
-    background-image: url("images/satir2.jpg");
+    background-image: url("images/satir1.jpg");
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -106,5 +106,8 @@ color:darkgray;
 .faaliyet{
     margin-top: 10px;
 }
-
+.card{
+    border:none;
+    border-radius:0;
+}
 
