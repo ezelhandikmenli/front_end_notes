@@ -92,8 +92,9 @@ color:darkgray;
 }
 .satir2{
     background-image: url("images/satir1.jpg");
-    background-size:cover;
+    height:370px;
     background-repeat: no-repeat;
+    width:100%;
 }
 .simge{
     width:300px;
@@ -103,11 +104,68 @@ color:darkgray;
 .hakbaslik, .unvan, .ad, .faaliyet{
     font-family: 'Castoro Titling', cursive;
 }
-.faaliyet{
-    margin-top: 10px;
-}
 .card{
     border:none;
     border-radius:0;
+    height:250px; 
+    width:85%; 
+    margin:auto;
+    box-shadow:0px 0px 20px black inset;
+}
+.faaliyet {
+    margin-top: 10px;
+    text-align: center; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.cardname{
+    text-align: center;
+    color:black;
+    font-family:cursive;
+}
+.list li{
+    color:darkgrey;
+}
+.cards{
+    width:200px;
+    height:200px;
+    margin-bottom: 20px;
+}
+/* Resimlerin üzerine gelindiğinde bulanıklaşma efekti */
+.uzmanliklar {
+    position: relative;
+    overflow: hidden;
 }
 
+.cards {
+    transition: filter 0.3s ease; /* Bulanıklaşma efekti için geçiş süresi */
+}
+
+.cards:hover {
+    filter: blur(5px); /* Bulanıklaşma efekti */
+}
+
+/* Yazıyı gizleyelim, resmin üzerine gelindiğinde görünecek */
+.aciklama {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Arka plan rengi ve opaklık */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Geçiş süresi */
+}
+
+.alan {
+    color: white; /* Yazı rengi */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Resmin üzerine gelindiğinde yazıyı görünür hale getir */
+.uzmanliklar:hover .aciklama {
+    opacity: 1;
+}
