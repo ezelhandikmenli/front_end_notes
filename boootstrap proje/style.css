@@ -98,7 +98,7 @@ color:darkgray;
 .simge{
     width:300px;
     height:300px;
-    
+    margin-top:20px;
 }
 .hakbaslik, .unvan, .ad, .faaliyet{
     font-family: 'Castoro Titling', cursive;
@@ -121,7 +121,7 @@ color:darkgray;
     color:black;
     font-family:cursive;
 }
-.list li{
+.list li, .danisman li{
     color:darkgrey;
 }
 .cards{
@@ -138,21 +138,21 @@ color:darkgray;
   
   .alan {
     position: absolute;
-    top: 50%; /* Metni dikey olarak resmin ortasına yerleştirir */
-    left: 50%; /* Metni yatay olarak resmin ortasına yerleştirir */
-    transform: translate(-50%, -50%); /* Metni kesirli pozisyonlama ile tam olarak ortalar */
-    background-color: rgba(156, 153, 153, 0.347); /* Metnin arka plan rengi ve opaklığı */
-    color: white; /* Metin rengi */
-    padding: 10px 20px; /* Metin içeriği ile metin kutusu arasındaki boşluk */
-    border-radius: 5px; /* Metin kutusunun köşe yuvarlama */
-    opacity: 0; /* Başlangıçta metni gizle */
-    transition: opacity 0.3s ease; /* Opaklık değerini değiştirirken geçiş efekti */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(156, 153, 153, 0.347); 
+    color: white;
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
   }
   .uzmanliklar:hover .alan {
-    opacity: 1; /* Resmin üzerine gelindiğinde metni göster */
+    opacity: 1; 
   }
   .footeralani{
-    background-image: url("images/white-painted-wall-texture-background.jpg");
+    background-image: url("images/footer.jpg");
 }
 .footerliste li{
     list-style: none;
@@ -160,3 +160,63 @@ color:darkgray;
     font-size: 40px;
     color:darkgoldenrod;
 }
+.iletisim{
+    font-size:50px;
+    color:grey;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.ficon{
+    width:25px;
+    height:25px;
+}
+.fnav {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+  }
+  .fnav li {
+    align-items: center;
+    display: flex;
+    margin-bottom: 10px; 
+  }
+  .fnav .ficon {
+    margin-right: 10px; 
+    width: 24px; 
+    height: 24px;
+  }
+  
+  /* hakkımızda */
+  .hero-image2{
+    background-image: url("images/hakkimizda.jpg");
+    height:350px;
+    background-size: cover;
+    background-position: center;
+  }
+ 
+
+  
+  /* Hakkımızda yazısı */
+  .hero-text2 {
+    position: absolute;
+    top: 25%; /* Dikey olarak ortalamak için üst kenarı 50% olarak ayarlayın */
+    left: 50%; /* Yatay olarak ortalamak için sol kenarı 50% olarak ayarlayın */
+    transform: translate(-50%, -50%); /* Yazıyı yatay ve dikey olarak ortalamak için kullanılır */
+    background-color: rgba(255, 255, 255, 0.7); /* Arkaplan rengi ve opaklık */
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  /* Yazı stilini özelleştirebilirsiniz */
+  .txt {
+    font-size: 60px;
+    font-weight: bold;
+    color: gray;
+    font-family:'Courier New', Courier, monospace
+  }
+  .danisman{
+    margin-top:90px;
+  }
+  
+  
