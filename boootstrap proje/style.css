@@ -1,4 +1,3 @@
-/* hero-image */
 body, html {
     height: 100%;
     margin: 0;
@@ -129,43 +128,35 @@ color:darkgray;
     width:200px;
     height:200px;
     margin-bottom: 20px;
-}
-/* Resimlerin üzerine gelindiğinde bulanıklaşma efekti */
+    align-items: center;
+    border-radius: 50%;
+} 
 .uzmanliklar {
     position: relative;
-    overflow: hidden;
-}
-
-.cards {
-    transition: filter 0.3s ease; /* Bulanıklaşma efekti için geçiş süresi */
-}
-
-.cards:hover {
-    filter: blur(5px); /* Bulanıklaşma efekti */
-}
-
-/* Yazıyı gizleyelim, resmin üzerine gelindiğinde görünecek */
-.aciklama {
+    display: inline-block;
+  }
+  
+  .alan {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Arka plan rengi ve opaklık */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease; /* Geçiş süresi */
+    top: 50%; /* Metni dikey olarak resmin ortasına yerleştirir */
+    left: 50%; /* Metni yatay olarak resmin ortasına yerleştirir */
+    transform: translate(-50%, -50%); /* Metni kesirli pozisyonlama ile tam olarak ortalar */
+    background-color: rgba(156, 153, 153, 0.347); /* Metnin arka plan rengi ve opaklığı */
+    color: white; /* Metin rengi */
+    padding: 10px 20px; /* Metin içeriği ile metin kutusu arasındaki boşluk */
+    border-radius: 5px; /* Metin kutusunun köşe yuvarlama */
+    opacity: 0; /* Başlangıçta metni gizle */
+    transition: opacity 0.3s ease; /* Opaklık değerini değiştirirken geçiş efekti */
+  }
+  .uzmanliklar:hover .alan {
+    opacity: 1; /* Resmin üzerine gelindiğinde metni göster */
+  }
+  .footeralani{
+    background-image: url("images/white-painted-wall-texture-background.jpg");
 }
-
-.alan {
-    color: white; /* Yazı rengi */
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* Resmin üzerine gelindiğinde yazıyı görünür hale getir */
-.uzmanliklar:hover .aciklama {
-    opacity: 1;
+.footerliste li{
+    list-style: none;
+    font-family:  'Playfair', serif;
+    font-size: 40px;
+    color:darkgoldenrod;
 }
